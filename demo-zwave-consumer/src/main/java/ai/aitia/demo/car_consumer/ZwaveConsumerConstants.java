@@ -12,6 +12,8 @@ public class ZwaveConsumerConstants {
 	public static final String HTTP_METHOD = "http-method";
 	
 	//public static final String CREATE_CAR_SERVICE_DEFINITION = "create-car";
+	public static final String GET_ZWAVE_DEVICES_SERVICE_DEFINITION = "get-zwave-devices";
+
 	public static final String GET_CAR_SERVICE_DEFINITION = "get-setpoint-history";
 	public static final String GET_SETPOINT_SERVICE_DEFINITION = "get-setpoint-thermo";
 	public static final String SWITCH_PLUG_SERVICE_DEFINITION = "switch-plug-state";

@@ -1,13 +1,14 @@
-# Zwave SoS Demo (Java Spring-Boot)
-##### The project provides Arrowhead v4.1.3 Clients demo implementation developed from [client-skeleton project](https://github.com/arrowhead-f/client-skeleton-java-spring)
+# Arrowhead Zwave System Demonstrator (Java Spring-Boot)
+The Arrowhead Zwave System Demonstrator is a SOS with Zwave Devices; One Thermostat and one Plug whích behave as service providers in the arrowhead framework and the consumer consumes the services to get the Thermostat SetPoint Current and Previous Values and Switch the Plug ON and OFF at RUN Time.
 
-## Overview
-The goal of the project is to simply demonstrate how a consumer could orchestrate for a service and consume it afterward.
-##### The Local Cloud Architecture 
-![#1589F0](https://placehold.it/15/1589F0/000000?text=+) `AH Service Registry`
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `AH Authorization` 
-![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `AH Orchestrator`
-![Alt text](https://github.com/arrowhead-f/sos-examples-spring/blob/master/demo-car/doc/overview.png)
+## Setting up the hardware
+
+### Hardware used
+- Raspberry Pi 4.0
+- Z-Wave hat
+- Fibaro Z-Wave electrical outlet  PLUG
+-  Danfoss Z-Wave radiator valve Thermostat
+
 
 ## Service Descriptions
 **create-car:**

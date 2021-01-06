@@ -3,9 +3,7 @@ package ai.aitia.demo.car_consumer;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import com.aitia.demo.zwave_common.dto.PlugRequestDTO;
-import com.aitia.demo.zwave_common.dto.PlugResponseDTO;
-import com.aitia.demo.zwave_common.dto.ThermoRequestDTO;
+import com.aitia.demo.zwave_common.dto.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,8 +13,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.HttpMethod;
-
-import com.aitia.demo.zwave_common.dto.ThermoResponseDTO;
 
 import eu.arrowhead.client.library.ArrowheadService;
 import eu.arrowhead.common.CommonConstants;
@@ -58,7 +54,10 @@ public class ZwaveConsumerMain implements ApplicationRunner {
     @Override
 	public void run(final ApplicationArguments args) throws Exception {
     	//createCarServiceOrchestrationAndConsumption();
-
+		getZwaveDecicesServiceOrchestrationAndConsumption();
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		TimeUnit.SECONDS.sleep(5);
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		getSetPointThermoServiceOrchestrationAndConsumption();
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -74,7 +73,74 @@ public class ZwaveConsumerMain implements ApplicationRunner {
 		switchPlugServiceOrchestrationAndConsumption();
 
 	}
-    
+    //-------------------------------------------------------------------------------------------------
+	public void getZwaveDecicesServiceOrchestrationAndConsumption() {
+
+		double setPointValue=0.00;
+
+		////////////////////////////////////////////////////////////////
+
+		logger.info("Orchestration request for " + ZwaveConsumerConstants.GET_ZWAVE_DEVICES_SERVICE_DEFINITION + " service:");
+		final ServiceQueryFormDTO serviceQueryForm1 = new ServiceQueryFormDTO.Builder(ZwaveConsumerConstants.GET_ZWAVE_DEVICES_SERVICE_DEFINITION)
+				.interfaces(getInterface())
+				.build();
+
+		final Builder orchestrationFormBuilder1 = arrowheadService.getOrchestrationFormBuilder();
+		final OrchestrationFormRequestDTO orchestrationFormRequest1 = orchestrationFormBuilder1.requestedService(serviceQueryForm1)
+				.flag(Flag.MATCHMAKING, true)
+				.flag(Flag.OVERRIDE_STORE, true)
+				.build();
+
+		printOut(orchestrationFormRequest1);
+
+		final OrchestrationResponseDTO orchestrationResponse1 = arrowheadService.proceedOrchestration(orchestrationFormRequest1);
+
+		logger.info("Orchestration response for :"+ ZwaveConsumerConstants.GET_ZWAVE_DEVICES_SERVICE_DEFINITION + " service:");
+		printOut(orchestrationResponse1);
+
+		if (orchestrationResponse1 == null) {
+			logger.info("No orchestration response received");
+		} else if (orchestrationResponse1.getResponse().isEmpty()) {
+			logger.info("No provider found during the orchestration");
+		} else {
+
+			System.out.println("provider Name: "+orchestrationResponse1.getResponse().get(0).getProvider().getSystemName()+
+					"Provider address: "+orchestrationResponse1.getResponse().get(0).getProvider().getAddress()+":"+orchestrationResponse1.getResponse().get(0).getProvider().getPort());
+
+			final OrchestrationResultDTO orchestrationResult1 = orchestrationResponse1.getResponse().get(0);
+			validateOrchestrationResult(orchestrationResult1, ZwaveConsumerConstants.GET_ZWAVE_DEVICES_SERVICE_DEFINITION);
+
+			//final List<ZwaveRequestDTO> carsToCreate = List.of(new ZwaveRequestDTO("nissan", "green"), new ZwaveRequestDTO("mazda", "blue"), new ZwaveRequestDTO("opel", "blue"), new ZwaveRequestDTO("nissan", "gray"));
+			ZwaveRequestDTO setPointReq = new ZwaveRequestDTO("GetAllDevices", "Zwave");
+
+			logger.info("Fetch All Zwave Devices Info Request:");
+			printOut(setPointReq);
+
+		/*	for (final ZwaveRequestDTO thermoRequestDTO : carsToCreate) {
+				logger.info("Create a car request:");
+				printOut(thermoRequestDTO);*/
+
+			final String token = orchestrationResult1.getAuthorizationTokens() == null ? null : orchestrationResult1.getAuthorizationTokens().get(getInterface());
+			final ZwaveResponseDTO setpointFetched7 = arrowheadService.consumeServiceHTTP(ZwaveResponseDTO.class, HttpMethod.valueOf(orchestrationResult1.getMetadata().get(ZwaveConsumerConstants.HTTP_METHOD)),
+					orchestrationResult1.getProvider().getAddress(), orchestrationResult1.getProvider().getPort(), orchestrationResult1.getServiceUri(),
+					getInterface(), token, setPointReq, new String[0]);
+			logger.info("__________________________________________________________________________:");
+			logger.info("__________________________________________________________________________:");
+			logger.info("__________________________________________________________________________:");
+			logger.info("Zwave Provider response");
+			System.out.println("\n\nThe Following Zwave Devices are Connected with the Zwave Controller ");
+			System.out.println("\n\n "+setpointFetched7.getServiceType() );
+
+			System.out.println("\n\n");
+
+			logger.info("__________________________________________________________________________:");
+			logger.info("__________________________________________________________________________:");
+			logger.info("__________________________________________________________________________:");
+			//	printOut(carCreated);
+			//	}
+		}
+	}
+
     //-------------------------------------------------------------------------------------------------
     public void getSetPointThermoServiceOrchestrationAndConsumption() {
 
