@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo-zwave-common" />
+        <module name="demo-zwave-consumer" />
+        <module name="demo-thermo-provider" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Arrowhead_Zwave_System_Demo" target="1.8" />
+      <module name="demo-thermo-provider" target="11" />
+      <module name="demo-zwave-common" target="1.8" />
+      <module name="demo-zwave-consumer" target="9" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo-thermo-provider" options="-parameters" />
+      <module name="demo-zwave-common" options="-parameters" />
+      <module name="demo-zwave-consumer" options="-parameters" />
+    </option>
+  </component>
+</project>

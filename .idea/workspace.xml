@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bb3483f7-8d20-464e-b20e-2c839f54e5fd" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/demo-thermo" />
+  </component>
+  <component name="JupyterTrust" id="3b127534-7dc9-4429-b770-a8b952328328" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.1\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1m0r4nUQj7XusYPYn3ZbD4o4uk6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ai.aitia.demo.thermo_provider" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\javsal\Documents\GitHub\zwave\backup-212021\demo-thermo\demo-zwave-common\src\main\java\com\aitia\demo\zwave_common\dto" />
+      <recent name="C:\Users\javsal\Documents\GitHub\zwave\demo-zwave" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ZwaveConsumerMain">
+    <configuration name="SetPointReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ai.aitia.demo.thermo_provider.SetPointReader" />
+      <module name="demo-thermo-provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ai.aitia.demo.thermo_provider.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThermoProviderMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo-thermo-provider" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ai.aitia.demo.thermo_provider.ThermoProviderMain" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZwaveConsumerMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo-zwave-consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ai.aitia.demo.car_consumer.ZwaveConsumerMain" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.SetPointReader" />
+      <item itemvalue="Spring Boot.ZwaveConsumerMain" />
+      <item itemvalue="Spring Boot.ThermoProviderMain" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SetPointReader" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bb3483f7-8d20-464e-b20e-2c839f54e5fd" name="Default Changelist" comment="" />
+      <created>1608641161689</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608641161689</updated>
+      <workItem from="1608641162891" duration="126000" />
+      <workItem from="1608641660922" duration="13859000" />
+      <workItem from="1609119064681" duration="10894000" />
+      <workItem from="1609371022008" duration="1403000" />
+      <workItem from="1609372710521" duration="19790000" />
+      <workItem from="1609411179025" duration="26259000" />
+      <workItem from="1609731582873" duration="7819000" />
+      <workItem from="1609912844014" duration="12320000" />
+    </task>
+    <task id="LOCAL-00001" summary="second commit">
+      <created>1609371373719</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609371373719</updated>
+    </task>
+    <task id="LOCAL-00002" summary="second commit">
+      <created>1609372373131</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609372373131</updated>
+    </task>
+    <task id="LOCAL-00003" summary="refactor to zwave demo">
+      <created>1609373171217</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1609373171217</updated>
+    </task>
+    <task id="LOCAL-00004" summary="refactor to zwave demo">
+      <created>1609373191709</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609373191709</updated>
+    </task>
+    <task id="LOCAL-00005" summary="refactor to zwave provider and consumer classes, running 100%">
+      <created>1609373652059</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609373652059</updated>
+    </task>
+    <task id="LOCAL-00006" summary="refactor to zwave provider and consumer classes, running 100%">
+      <created>1609373828066</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609373828066</updated>
+    </task>
+    <task id="LOCAL-00007" summary="refactor to zwave provider and consumer classes, running 100%">
+      <created>1609373967443</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1609373967443</updated>
+    </task>
+    <task id="LOCAL-00008" summary="refactor to zwave provider and consumer classes, running 100%">
+      <created>1609374430725</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1609374430726</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Final Integrqtion si Left">
+      <created>1609551700207</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1609551700207</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="second commit" />
+    <MESSAGE value="refactor to zwave demo" />
+    <MESSAGE value="refactor to zwave provider and consumer classes, running 100%" />
+    <MESSAGE value="Final Integrqtion si Left" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Integrqtion si Left" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="3112" y="234" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609653407566">
+      <screen x="2560" y="0" width="2560" height="1400" />
+    </state>
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609373530920" />
+    <state x="3112" y="234" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/2560.0.2560.1400/0.0.2560.1400@2560.0.2560.1400" timestamp="1609653407566" />
+    <state x="683" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609413222491">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="683" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1609413222491" />
+    <state x="3387" y="381" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1609653371742">
+      <screen x="2560" y="0" width="2560" height="1400" />
+    </state>
+    <state x="3387" y="381" key="#com.intellij.ide.util.TreeClassChooserDialog/2560.0.2560.1400/0.0.2560.1400@2560.0.2560.1400" timestamp="1609653371742" />
+    <state x="3675" y="232" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1609640954136">
+      <screen x="2560" y="0" width="2560" height="1400" />
+    </state>
+    <state x="57" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609373907789" />
+    <state x="3675" y="232" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/2560.0.2560.1400/0.0.2560.1400@2560.0.2560.1400" timestamp="1609640954136" />
+    <state x="3547" y="369" key="FileChooserDialogImpl" timestamp="1609929198461">
+      <screen x="2560" y="0" width="2560" height="1400" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1609411273749" />
+    <state x="987" y="369" key="FileChooserDialogImpl/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1609732858221" />
+    <state x="3547" y="369" key="FileChooserDialogImpl/2560.0.2560.1400/0.0.2560.1400@2560.0.2560.1400" timestamp="1609929198461" />
+    <state x="838" y="417" key="Github.ShareDialog" timestamp="1609371272624">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="838" y="417" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609371272624" />
+    <state x="623" y="217" key="Github.UntrackedFilesDialog" timestamp="1609371281670">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="217" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609371281670" />
+    <state width="2517" height="556" key="GridCell.Tab.0.bottom" timestamp="1609925719797">
+      <screen x="2560" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1877" height="207" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609411528182" />
+    <state width="2517" height="799" key="GridCell.Tab.0.bottom/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1609753166142" />
+    <state width="2517" height="556" key="GridCell.Tab.0.bottom/2560.0.2560.1400/0.0.2560.1400@2560.0.2560.1400" timestamp="1609925719797" />
+    <state width="2517" height="556" key="GridCell.Tab.0.center" timestamp="1609925719797">
+      <screen x="2560" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1877" height="207" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609411528182" />
+    <state width="2517" height="799" key="GridCell.Tab.0.center/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1609753166142" />
+    <state width="2517" height="556" key="GridCell.Tab.0.center/2560.0.2560.1400/0.0.2560.1400@2560.0.2560.1400" timestamp="1609925719797" />
+    <state width="2517" height="556" key="GridCell.Tab.0.left" timestamp="1609925719797">
+      <screen x="2560" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1877" height="207" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609411528182" />
+    <state width="2517" height="799" key="GridCell.Tab.0.left/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1609753166142" />
+    <state width="2517" height="556" key="GridCell.Tab.0.left/2560.0.2560.1400/0.0.2560.1400@2560.0.2560.1400" timestamp="1609925719797" />
+    <state width="2517" height="556" key="GridCell.Tab.0.right" timestamp="1609925719797">
+      <screen x="2560" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1877" height="207" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609411528182" />
+    <state width="2517" height="799" key="GridCell.Tab.0.right/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1609753166142" />
+    <state width="2517" height="556" key="GridCell.Tab.0.right/2560.0.2560.1400/0.0.2560.1400@2560.0.2560.1400" timestamp="1609925719797" />
+    <state width="2517" height="556" key="GridCell.Tab.1.bottom" timestamp="1609925719797">
+      <screen x="2560" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1877" height="207" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609411528182" />
+    <state width="2517" height="799" key="GridCell.Tab.1.bottom/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1609753166143" />
+    <state width="2517" height="556" key="GridCell.Tab.1.bottom/2560.0.2560.1400/0.0.2560.1400@2560.0.2560.1400" timestamp="1609925719797" />
+    <state width="2517" height="556" key="GridCell.Tab.1.center" timestamp="1609925719797">
+      <screen x="2560" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1877" height="207" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609411528182" />
+    <state width="2517" height="799" key="GridCell.Tab.1.center/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1609753166142" />
+    <state width="2517" height="556" key="GridCell.Tab.1.center/2560.0.2560.1400/0.0.2560.1400@2560.0.2560.1400" timestamp="1609925719797" />
+    <state width="2517" height="556" key="GridCell.Tab.1.left" timestamp="1609925719797">
+      <screen x="2560" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1877" height="207" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609411528182" />
+    <state width="2517" height="799" key="GridCell.Tab.1.left/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1609753166142" />
+    <state width="2517" height="556" key="GridCell.Tab.1.left/2560.0.2560.1400/0.0.2560.1400@2560.0.2560.1400" timestamp="1609925719797" />
+    <state width="2517" height="556" key="GridCell.Tab.1.right" timestamp="1609925719797">
+      <screen x="2560" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1877" height="207" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609411528182" />
+    <state width="2517" height="799" key="GridCell.Tab.1.right/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1609753166142" />
+    <state width="2517" height="556" key="GridCell.Tab.1.right/2560.0.2560.1400/0.0.2560.1400@2560.0.2560.1400" timestamp="1609925719797" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1609371168250">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1609371168250" />
+    <state x="736" y="339" key="Vcs.Push.Dialog.v2" timestamp="1609551709564">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609374469436" />
+    <state x="736" y="339" key="Vcs.Push.Dialog.v2/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1609551709564" />
+    <state x="662" y="360" key="new project wizard" timestamp="1609521005634">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="662" y="360" key="new project wizard/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1609521005634" />
+  </component>
+</project>

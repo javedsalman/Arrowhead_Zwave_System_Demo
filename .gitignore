@@ -1,0 +1,4 @@
+# Project exclude paths
+/demo-car-common/target/
+/demo-car-consumer/target/
+/demo-car-provider/target/

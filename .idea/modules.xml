@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Arrowhead_Zwave_System_Demo.iml" filepath="$PROJECT_DIR$/Arrowhead_Zwave_System_Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-thermo-provider/demo-thermo-provider.iml" filepath="$PROJECT_DIR$/demo-thermo-provider/demo-thermo-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-zwave-common/demo-zwave-common.iml" filepath="$PROJECT_DIR$/demo-zwave-common/demo-zwave-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-zwave-consumer/demo-zwave-consumer.iml" filepath="$PROJECT_DIR$/demo-zwave-consumer/demo-zwave-consumer.iml" />
+    </modules>
+  </component>
+</project>
