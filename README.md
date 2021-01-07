@@ -3,7 +3,7 @@ The Arrowhead Zwave System Demonstrator is a SOS with a Z-wave Controller, a Z-w
 
 
 ### Hardware used
-- Raspberry Pi 4.0
+- Raspberry Pi 3.0
 - Z-Wave hat
 - Fibaro Z-Wave electrical outlet  PLUG
 - Danfoss Z-Wave radiator valve Thermostat
