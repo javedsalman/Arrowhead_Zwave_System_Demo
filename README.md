@@ -1,16 +1,25 @@
 # Arrowhead Zwave System Demonstrator (Java Spring-Boot)
-The Arrowhead Zwave System Demonstrator is a SOS with Zwave Devices; One Thermostat and one Plug whích behave as service providers in the arrowhead framework and the consumer consumes the services to get the Thermostat SetPoint Current and Previous Values and Switch the Plug ON and OFF at RUN Time.
+The Arrowhead Zwave System Demonstrator is a SOS with a Z-wave Controller, a Z-wave compliant Dasnfoss Thermostat Valve and a Z-wave compliant Fibaro Wall Plug which all behave as service providers in the arrowhead framework and the consumer connect to these devices and consumes their services. 
 
-## Setting up the hardware
 
 ### Hardware used
 - Raspberry Pi 4.0
 - Z-Wave hat
 - Fibaro Z-Wave electrical outlet  PLUG
--  Danfoss Z-Wave radiator valve Thermostat
+- Danfoss Z-Wave radiator valve Thermostat
+
+
+## Application Systems in the Arrowhead Cloud:
+### demo-zwave-consumer
+This is the Consumer in the SOS.
+### demo-zwave-provider
+This is the provider which fetches the information of all the zwave devices connected with the zwave controller and also maintains a inherent DataManager to store the devices
+### demo-thermo-provider
+This is the provider which fetches the setpoint values from Danfoss Z-Wave radiator valve Thermostat  and also maintains a inherent DataManager to store the history of setpoint service requests.
+### demo-plug-provider
+This is the provider which receive POST request from the consumer for switching Fibaro Z-Wave electrical outlet  PLUG ON or OFF and it also maintains DataManager to store the history of switch-plug-state service request.
 
 ##System Description Overview:
-The Arrowhead Zwave System Demonstrator is a SOS with a Z-wave Controller, a Z-wave compliant Dasnfoss Thermostat Valve and a Z-wave compliant Fibaro Wall Plug which all behave as service providers in the arrowhead framework and the consumer connect to these devices and consumes their services. 
 
 •	The Consumer will first send the orchestration request for getting the z-wave device list service to get all the available devices connected to z-wave controller.
 
