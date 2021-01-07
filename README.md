@@ -9,53 +9,19 @@ The Arrowhead Zwave System Demonstrator is a SOS with Zwave Devices; One Thermos
 - Fibaro Z-Wave electrical outlet  PLUG
 -  Danfoss Z-Wave radiator valve Thermostat
 
+##System Description Overview:
+The Arrowhead Zwave System Demonstrator is a SOS with a Z-wave Controller, a Z-wave compliant Dasnfoss Thermostat Valve and a Z-wave compliant Fibaro Wall Plug which all behave as service providers in the arrowhead framework and the consumer connect to these devices and consumes their services. 
 
-## Service Descriptions
-**create-car:**
+•	The Consumer will first send the orchestration request for getting the z-wave device list service to get all the available devices connected to z-wave controller.
 
-Creates a new car instance.
-* ***input:*** CarRequestDTO.json
-```
-{
-   "brand":"string",
-   "color":"string"
-}
-```
-* ***output:*** CarResponseDTO.json
-```
-{
-   "id":"integer",
-   "brand":"string",
-   "color":"string"
-}
-```
+•	After the list of devices with unique device ids and their types is received from zwave controller service provider, it will use the device ids and device types to request for different kind of services.
 
-**get-car:**
+•	The consumer request get-setpoint-thermo from Thermostat provider after getting the orchestration response for get-setpoint-thermo service to receive the current setpoint value from Thermostat Valve while the Thermostat provider also stores the value with the timestamp into its inherent DataManager.
 
-Returns a car list based on the given parameters.
-* ***input:*** Query parameters: 
+•	The consumer then requests get-set-point-history from Thermostat provider after getting the orchestration response for get-setpoint-history service to receive the records of setpoint value history stored in the Thermostat Provider inherent DataManager. 
 
-  `brand`={brand} [*not mandatory*]
-  
-  `color`={color} [*not mandatory*]
+•	Then the consumer requests switch-plug-state from Plug provider after getting the orchestration response for it to First Turn OFF the Switch then Turn it ON after 5 seconds.
 
-* ***output:*** List of CarResponseDTO.json
-```
-[{
-   "id":"integer",
-   "brand":"string",
-   "color":"string"
-}]
-```
+##	Behavior Diagrams
 
-## How to run?
-1. Clone this repo to your local machine.
-2. Go to the root directory and execute `mvn install` command, then wait until the build succeeds.
-3. Start the [Arrowhead Framework v4.1.3](https://github.com/arrowhead-f/core-java-spring), before you would start the demo.
-   Required core systems:
-   * Service Registry
-   * Authorization
-   * Orchestration
-4. Start the provider (it will registrate automatically to the Service Registry Core System).
-5. At the very first time, register the consumer manually and create the intra cloud authorization rules.
-6. Start the Consumer.
+![picture](doc/ArrowheadZwaveSystemDemonstrator.png)
