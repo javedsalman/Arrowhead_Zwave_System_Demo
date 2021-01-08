@@ -19,7 +19,7 @@ This is the provider which fetches the setpoint values from Danfoss Z-Wave radia
 ### demo-plug-provider
 This is the provider which receive POST request from the consumer for switching Fibaro Z-Wave electrical outlet  PLUG ON or OFF and it also maintains DataManager to store the history of switch-plug-state service request.
 
-##System Description Overview:
+## System Description Overview:
 
 •	The Consumer will first send the orchestration request for getting the z-wave device list service to get all the available devices connected to z-wave controller.
 
